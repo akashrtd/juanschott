@@ -1,0 +1,985 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="JuanSchott — Open-Source Competitive FPS">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Open Source &middot; Pre-Alpha
+      </div>
+      <h1>
+        <span class="hero-title-line">Tactical FPS.</span>
+        <span class="hero-title-line accent">Vertical Combat.</span>
+        <span class="hero-title-line">Built in the Open.</span>
+      </h1>
+      <p class="hero-desc">
+        JuanSchott is an open-source competitive multiplayer FPS built on <strong>Bevy</strong> and <strong>Rust</strong>.
+        Parkour movement meets low-TTK precision gunplay across fully three-dimensional vertical arenas.
+      </p>
+      <div class="hero-actions">
+        <a href="https://github.com/akashrtd/juanschott" target="_blank" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          View on GitHub
+        </a>
+        <a href="#about" class="btn btn-secondary">Learn More</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value">MIT</span>
+          <span class="stat-label">License</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">Rust</span>
+          <span class="stat-label">Language</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">Bevy 0.18</span>
+          <span class="stat-label">Engine</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">41</span>
+          <span class="stat-label">Design Docs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <p class="section-label">// About</p>
+      <h2 class="section-title">What is JuanSchott?</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            A god-built satellite arena called the <strong>Vimana</strong> appears in Earth's orbit. Fighters enter.
+            They compete. The collective spectacle of their combat over a season determines whether Earth heals or dies.
+          </p>
+          <p>
+            <strong>Low TTK precision gunplay</strong> meets <strong>parkour movement</strong> in arenas that use
+            all three dimensions. Wall-running, double-jumping, sliding — every surface is a combat space.
+            Three weapon types — hitscan, projectile, beam — with a modular add-on system for strategic customization.
+          </p>
+          <p>
+            Rendered in a <strong>low-poly, high-finish</strong> art style with Eastern temple geometry and alien aesthetics.
+            Built entirely in the open. Every design decision documented. Every line of code public.
+          </p>
+        </div>
+        <div class="about-features">
+          <div class="feature-card">
+            <div class="feature-icon">&triangle;</div>
+            <h3>Full 3D Combat</h3>
+            <p>Maps are volumes, not floors. Every surface is playable. Mid-air cover. Floating platforms. Wall-run paths.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">&diamond;</div>
+            <h3>Tactical Precision</h3>
+            <p>Low TTK where positioning wins. Movement is a positioning tool, not evasion. First-shot advantage matters.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">&circlearrowright;</div>
+            <h3>Parkour Movement</h3>
+            <p>Wall-run, wall-jump, double-jump, slide. Inspired by Titanfall 2, tuned for tactical precision.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">&square;</div>
+            <h3>Open Source</h3>
+            <p>MIT/Apache 2.0. Every design doc, every decision, every line of code. Built by contributors, for contributors.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section id="tech" class="tech">
+    <div class="container">
+      <p class="section-label">// Tech Stack</p>
+      <h2 class="section-title">Built With Rust</h2>
+      <p class="section-desc">JuanSchott uses a modern, ECS-native technology stack. Every component is open-source and permissively licensed.</p>
+      <div class="grid-3">
+        <div class="tech-card">
+          <div class="tech-name">Bevy 0.18</div>
+          <div class="tech-role">Game Engine</div>
+          <p>Data-driven ECS engine built in Rust. Rendering, asset loading, scheduling, UI — everything we need, nothing we don't.</p>
+          <a href="https://bevyengine.org" target="_blank" class="tech-link">bevyengine.org &rarr;</a>
+        </div>
+        <div class="tech-card">
+          <div class="tech-name">Avian 3D</div>
+          <div class="tech-role">Physics Engine</div>
+          <p>ECS-native physics for Bevy. Kinematic character controllers, raycasting for hitscan, collider generation from mesh geometry.</p>
+          <a href="https://github.com/avianphysics/avian" target="_blank" class="tech-link">GitHub &rarr;</a>
+        </div>
+        <div class="tech-card">
+          <div class="tech-name">lightyear 0.26</div>
+          <div class="tech-role">Networking</div>
+          <p>Server-authoritative multiplayer. Client prediction, rollback, lag compensation for hitscan, snapshot interpolation.</p>
+          <a href="https://github.com/cBournhonesque/lightyear" target="_blank" class="tech-link">GitHub &rarr;</a>
+        </div>
+        <div class="tech-card">
+          <div class="tech-name">wgpu</div>
+          <div class="tech-role">Rendering Backend</div>
+          <p>Vulkan, DX12, DX11, Metal, OpenGL. Runs on anything from Intel HD 4000 to RTX 4090.</p>
+          <a href="https://wgpu.rs" target="_blank" class="tech-link">wgpu.rs &rarr;</a>
+        </div>
+        <div class="tech-card">
+          <div class="tech-name">Blender</div>
+          <div class="tech-role">Art Pipeline</div>
+          <p>All models, maps, and animations created in Blender. Exported as glTF 2.0. Avian auto-generates colliders from mesh.</p>
+          <a href="https://www.blender.org" target="_blank" class="tech-link">blender.org &rarr;</a>
+        </div>
+        <div class="tech-card">
+          <div class="tech-name">Rust</div>
+          <div class="tech-role">Language</div>
+          <p>Memory-safe, zero-cost abstractions, fearless concurrency. The right language for a high-performance FPS.</p>
+          <a href="https://www.rust-lang.org" target="_blank" class="tech-link">rust-lang.org &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE -->
+  <section class="architecture">
+    <div class="container">
+      <p class="section-label">// Architecture</p>
+      <h2 class="section-title">Plugin-Based ECS</h2>
+      <p class="section-desc">Every feature is a Bevy plugin. Systems communicate through components and events. No god objects, no singletons.</p>
+      <div class="arch-visual">
+        <div class="arch-layer">
+          <span class="arch-layer-label">Game Logic</span>
+          <div class="arch-modules">
+            <span class="arch-mod">Player</span>
+            <span class="arch-mod">Weapons</span>
+            <span class="arch-mod">Health</span>
+            <span class="arch-mod">AddOns</span>
+            <span class="arch-mod">Modes</span>
+            <span class="arch-mod">Map</span>
+          </div>
+        </div>
+        <div class="arch-arrow">&darr;</div>
+        <div class="arch-layer">
+          <span class="arch-layer-label">Engine</span>
+          <div class="arch-modules">
+            <span class="arch-mod accent">Bevy ECS</span>
+            <span class="arch-mod accent">Avian Physics</span>
+            <span class="arch-mod accent">lightyear Net</span>
+          </div>
+        </div>
+        <div class="arch-arrow">&darr;</div>
+        <div class="arch-layer">
+          <span class="arch-layer-label">Rendering</span>
+          <div class="arch-modules">
+            <span class="arch-mod">wgpu</span>
+            <span class="arch-mod">Custom Shaders</span>
+            <span class="arch-mod">Bevy UI</span>
+          </div>
+        </div>
+      </div>
+      <div class="arch-note">
+        <p>Full crate structure and system documentation: <a href="https://github.com/akashrtd/juanschott/tree/main/resources/04_technical">resources/04_technical/</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section id="roadmap" class="roadmap">
+    <div class="container">
+      <p class="section-label">// Roadmap</p>
+      <h2 class="section-title">Development Phases</h2>
+      <p class="section-desc">Each phase delivers a playable milestone. No invisible infrastructure. Build, test, play, repeat.</p>
+      <div class="roadmap-track">
+        <div class="phase current">
+          <div class="phase-marker">
+            <span class="phase-num">1</span>
+          </div>
+          <div class="phase-content">
+            <h3>Movement + Test Map</h3>
+            <span class="phase-status">Next Up</span>
+            <p>Walk, sprint, jump, double-jump, slide around a test arena. FPS camera with mouse look. First playable moment.</p>
+            <div class="phase-tags">
+              <span class="tag">Avian Kinematic</span>
+              <span class="tag">glTF Loading</span>
+              <span class="tag">Camera System</span>
+            </div>
+          </div>
+        </div>
+        <div class="phase">
+          <div class="phase-marker">
+            <span class="phase-num">2</span>
+          </div>
+          <div class="phase-content">
+            <h3>Combat</h3>
+            <span class="phase-status planned">Planned</span>
+            <p>Hitscan, projectile, beam weapons. Health, damage, death, respawn. Wall-run and wall-jump. Full local combat loop.</p>
+            <div class="phase-tags">
+              <span class="tag">Raycasting</span>
+              <span class="tag">Damage System</span>
+              <span class="tag">Wall-Run</span>
+            </div>
+          </div>
+        </div>
+        <div class="phase">
+          <div class="phase-marker">
+            <span class="phase-num">3</span>
+          </div>
+          <div class="phase-content">
+            <h3>Multiplayer</h3>
+            <span class="phase-status planned">Planned</span>
+            <p>lightyear server-authoritative netcode. Client prediction, lag compensation, snapshot interpolation. Loadout and add-on system.</p>
+            <div class="phase-tags">
+              <span class="tag">lightyear</span>
+              <span class="tag">Prediction</span>
+              <span class="tag">Replication</span>
+            </div>
+          </div>
+        </div>
+        <div class="phase">
+          <div class="phase-marker">
+            <span class="phase-num">4</span>
+          </div>
+          <div class="phase-content">
+            <h3>Rendering</h3>
+            <span class="phase-status planned">Planned</span>
+            <p>Custom toon/flat-color WGSL shader. Outline post-process. Weapon VFX. The game looks like the art vision.</p>
+            <div class="phase-tags">
+              <span class="tag">WGSL Shader</span>
+              <span class="tag">Post-Process</span>
+              <span class="tag">VFX</span>
+            </div>
+          </div>
+        </div>
+        <div class="phase">
+          <div class="phase-marker">
+            <span class="phase-num">5</span>
+          </div>
+          <div class="phase-content">
+            <h3>Content &amp; Beta</h3>
+            <span class="phase-status planned">Planned</span>
+            <p>Maps for 1v1, 3v3, 6v6. Full weapon and add-on roster. HUD, menus, sound. Playable beta.</p>
+            <div class="phase-tags">
+              <span class="tag">Maps</span>
+              <span class="tag">Audio</span>
+              <span class="tag">UI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTRIBUTE -->
+  <section id="contribute" class="contribute">
+    <div class="container">
+      <p class="section-label">// Contribute</p>
+      <h2 class="section-title">How to Help</h2>
+      <p class="section-desc">JuanSchott needs contributors of all skill levels. Rust developers, game designers, 3D artists, writers, playtesters.</p>
+      <div class="grid-2">
+        <div class="contrib-card">
+          <div class="contrib-num">01</div>
+          <h3>Clone &amp; Build</h3>
+          <div class="code-block">
+            <code>git clone https://github.com/akashrtd/juanschott.git</code><br>
+            <code>cd juanschott</code><br>
+            <code>cargo run --release</code>
+          </div>
+          <p class="contrib-note">Requires Rust stable. Project is pre-alpha — expect nothing to exist yet. That's where you come in.</p>
+        </div>
+        <div class="contrib-card">
+          <div class="contrib-num">02</div>
+          <h3>Pick an Issue</h3>
+          <p>Browse <a href="https://github.com/akashrtd/juanschott/issues">open issues</a> on GitHub. Look for labels:</p>
+          <div class="label-list">
+            <span class="issue-label" style="background:#1a7f37; color:#fff;">good first issue</span>
+            <span class="issue-label" style="background:#8b5cf6; color:#fff;">help wanted</span>
+            <span class="issue-label" style="background:#bf8700; color:#fff;">design</span>
+            <span class="issue-label" style="background:#1f6feb; color:#fff;">rust</span>
+            <span class="issue-label" style="background:#da3633; color:#fff;">art</span>
+            <span class="issue-label" style="background:#3fb950; color:#fff;">lore</span>
+          </div>
+        </div>
+        <div class="contrib-card">
+          <div class="contrib-num">03</div>
+          <h3>Read the Docs</h3>
+          <p>Every design decision is documented in <code>resources/</code>. Start with the vision, then dive into whatever area interests you:</p>
+          <ul class="doc-links">
+            <li><a href="https://github.com/akashrtd/juanschott/blob/main/resources/00_foundation/design_pillars.md">Design Pillars</a> — the 5 rules governing all decisions</li>
+            <li><a href="https://github.com/akashrtd/juanschott/blob/main/resources/02_game_design/movement_system.md">Movement System</a> — every mechanic with exact constants</li>
+            <li><a href="https://github.com/akashrtd/juanschott/blob/main/resources/04_technical/crate_structure.md">Crate Structure</a> — full file tree with descriptions</li>
+            <li><a href="https://github.com/akashrtd/juanschott/blob/main/resources/01_lore/world_overview.md">Lore Bible</a> — the world, the Pantheon, the Vimana</li>
+          </ul>
+        </div>
+        <div class="contrib-card">
+          <div class="contrib-num">04</div>
+          <h3>Submit a PR</h3>
+          <p>Fork the repo. Create a branch. Make your change. Open a pull request. We'll review together.</p>
+          <p>Contributors of all experience levels welcome. This is a learning project as much as a game.</p>
+          <div class="contrib-areas">
+            <span class="area-tag">Rust Systems</span>
+            <span class="area-tag">Bevy Plugins</span>
+            <span class="area-tag">WGSL Shaders</span>
+            <span class="area-tag">3D Modeling</span>
+            <span class="area-tag">Level Design</span>
+            <span class="area-tag">Game Design</span>
+            <span class="area-tag">Writing</span>
+            <span class="area-tag">Playtesting</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCS -->
+  <section id="docs" class="docs">
+    <div class="container">
+      <p class="section-label">// Documentation</p>
+      <h2 class="section-title">41 Design Documents</h2>
+      <p class="section-desc">Everything is documented. From movement constants to Pantheon lore. From crate structure to seasonal frameworks.</p>
+      <div class="grid-3 doc-grid">
+        <a href="https://github.com/akashrtd/juanschott/tree/main/resources/00_foundation" class="doc-card">
+          <div class="doc-count">4 docs</div>
+          <h3>Foundation</h3>
+          <p>Vision, design pillars, anti-goals, decisions log</p>
+        </a>
+        <a href="https://github.com/akashrtd/juanschott/tree/main/resources/01_lore" class="doc-card">
+          <div class="doc-count">6 docs</div>
+          <h3>Lore</h3>
+          <p>World overview, timeline, species, Pantheon, Vimana</p>
+        </a>
+        <a href="https://github.com/akashrtd/juanschott/tree/main/resources/02_game_design" class="doc-card">
+          <div class="doc-count">8 docs</div>
+          <h3>Game Design</h3>
+          <p>Movement, weapons, add-ons, health, modes, maps</p>
+        </a>
+        <a href="https://github.com/akashrtd/juanschott/tree/main/resources/03_art" class="doc-card">
+          <div class="doc-count">4 docs</div>
+          <h3>Art Direction</h3>
+          <p>Visual language, materials, lighting, UI/HUD</p>
+        </a>
+        <a href="https://github.com/akashrtd/juanschott/tree/main/resources/04_technical" class="doc-card">
+          <div class="doc-count">8 docs</div>
+          <h3>Technical</h3>
+          <p>Architecture, systems, components, networking, rendering</p>
+        </a>
+        <a href="https://github.com/akashrtd/juanschott/tree/main/resources/05_roadmap" class="doc-card">
+          <div class="doc-count">6 docs</div>
+          <h3>Roadmap</h3>
+          <p>5 development phases with task breakdowns</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container cta-inner">
+      <h2>The Vimana awaits.</h2>
+      <p>An open-source FPS built in the open, by contributors, for the community. Every line of code. Every design decision. Every pixel.</p>
+      <div class="cta-actions">
+        <a href="https://github.com/akashrtd/juanschott" target="_blank" class="btn btn-primary btn-lg">
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          Contribute on GitHub
+        </a>
+        <a href="https://github.com/akashrtd/juanschott/issues" target="_blank" class="btn btn-secondary btn-lg">Browse Issues</a>
+      </div>
+    </div>
+  </section>
+
+</Base>
+
+<style>
+  /* HERO */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 8rem 1.5rem 4rem;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 60px 60px;
+    opacity: 0.3;
+    mask-image: radial-gradient(ellipse 60% 50% at 50% 50%, black 20%, transparent 100%);
+  }
+
+  .hero-glow {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 600px;
+    background: radial-gradient(ellipse, rgba(201, 168, 76, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.9rem;
+    border: 1px solid var(--border-light);
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    background: var(--bg-card);
+  }
+
+  .badge-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-teal);
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  .hero-title-line {
+    display: block;
+  }
+
+  .hero-title-line.accent {
+    color: var(--accent-gold);
+  }
+
+  .hero-desc {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    max-width: 640px;
+    margin: 1.5rem 0 2rem;
+    line-height: 1.7;
+  }
+
+  .hero-desc strong {
+    color: var(--text-primary);
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-stats {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stat-value {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  .stat-divider {
+    width: 1px;
+    height: 24px;
+    background: var(--border-light);
+  }
+
+  /* ABOUT */
+  .about {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 1rem;
+  }
+
+  .about-text p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-text strong {
+    color: var(--accent-gold);
+  }
+
+  .about-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .feature-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.25rem;
+    transition: border-color 0.2s;
+  }
+
+  .feature-card:hover {
+    border-color: var(--accent-teal-dim);
+  }
+
+  .feature-icon {
+    color: var(--accent-gold);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .feature-card p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  /* TECH */
+  .tech-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.2s;
+  }
+
+  .tech-card:hover {
+    border-color: var(--border-light);
+    background: var(--bg-card-hover);
+  }
+
+  .tech-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--accent-gold);
+  }
+
+  .tech-role {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0.25rem 0 0.75rem;
+  }
+
+  .tech-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+
+  .tech-link {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+  }
+
+  /* ARCHITECTURE */
+  .architecture {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .arch-visual {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .arch-layer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .arch-layer-label {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    width: 100px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  .arch-modules {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .arch-mod {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+  }
+
+  .arch-mod.accent {
+    border-color: var(--accent-teal-dim);
+    color: var(--accent-teal);
+  }
+
+  .arch-arrow {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    margin-left: 50px;
+  }
+
+  .arch-note {
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+
+  /* ROADMAP */
+  .roadmap-track {
+    max-width: 700px;
+  }
+
+  .phase {
+    display: flex;
+    gap: 1.5rem;
+    position: relative;
+    padding-bottom: 2rem;
+  }
+
+  .phase:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: 19px;
+    top: 40px;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+  }
+
+  .phase.current:not(:last-child)::before {
+    background: var(--accent-gold);
+  }
+
+  .phase-marker {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-card);
+    border: 2px solid var(--border);
+  }
+
+  .phase.current .phase-marker {
+    border-color: var(--accent-gold);
+    background: rgba(201, 168, 76, 0.1);
+  }
+
+  .phase-num {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+
+  .phase.current .phase-num {
+    color: var(--accent-gold);
+  }
+
+  .phase-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .phase-status {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent-gold);
+    background: rgba(201, 168, 76, 0.1);
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+
+  .phase-status.planned {
+    color: var(--text-muted);
+    background: var(--bg-card);
+  }
+
+  .phase-content p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+  }
+
+  .phase-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .tag {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    background: var(--bg-card);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+  }
+
+  /* CONTRIBUTE */
+  .contribute {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .contrib-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 2rem;
+  }
+
+  .contrib-num {
+    font-family: var(--font-mono);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-gold-dim);
+    margin-bottom: 0.75rem;
+  }
+
+  .contrib-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .contrib-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+
+  .code-block {
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.8;
+  }
+
+  .contrib-note {
+    font-size: 0.8rem !important;
+    color: var(--text-muted) !important;
+    font-style: italic;
+  }
+
+  .label-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .issue-label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+    border-radius: 100px;
+  }
+
+  .doc-links {
+    list-style: none;
+    padding: 0;
+  }
+
+  .doc-links li {
+    padding: 0.35rem 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+  }
+
+  .contrib-areas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+  }
+
+  .area-tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    background: rgba(0, 201, 167, 0.08);
+    color: var(--accent-teal);
+    border: 1px solid rgba(0, 201, 167, 0.2);
+  }
+
+  /* DOCS */
+  .doc-grid a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .doc-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.2s;
+    display: block;
+  }
+
+  .doc-card:hover {
+    border-color: var(--accent-gold-dim);
+    background: var(--bg-card-hover);
+  }
+
+  .doc-count {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent-teal);
+    margin-bottom: 0.5rem;
+  }
+
+  .doc-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .doc-card p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+
+  /* CTA */
+  .cta {
+    padding: 6rem 1.5rem;
+    text-align: center;
+  }
+
+  .cta-inner {
+    max-width: 600px;
+  }
+
+  .cta h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+    color: var(--accent-gold);
+  }
+
+  .cta p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .cta-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn-lg {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .about-features {
+      grid-template-columns: 1fr;
+    }
+
+    .hero {
+      padding-top: 6rem;
+    }
+
+    .hero-actions {
+      flex-direction: column;
+    }
+
+    .hero-stats {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .stat-divider {
+      display: none;
+    }
+
+    .cta-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
